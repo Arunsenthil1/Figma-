@@ -30,355 +30,53 @@ Figma
 
 # CODE:
 ```
-index.html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sports Day Events</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="container">
-        <!-- Header Section -->
-        <div class="header">
-            <img src="college-logo.png" alt="Saveetha Engineering College Logo" class="college-logo">
-            <div class="tnea-code">
-                <p>TNEA CODE</p>
-                <span>1216</span>
-            </div>
-        </div>
-        
-        <!-- Event Logo -->
-        <img src="event-logo.png" alt="Event Logo" class="event-logo">
-
-        <!-- Title -->
-        <h2 class="title">SPORTS DAY EVENTS</h2>
-
-        <!-- Buttons -->
-        <div class="button-container">
-            <button class="btn login">LOGIN</button>
-            <button class="btn register">REGISTER</button>
-        </div>
-
-        <!-- Footer Text -->
-        <p class="footer-text">"BORN TO WIN"</p>
-    </div>
-</body>
-</html>
-events.html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sports Day Events</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="event-container">
-        <h2>SPORTS DAY EVENTS</h2>
-        <hr>
-        <ul class="event-list">
-            <li>Cricket</li>
-            <li>Badminton</li>
-            <li>Football</li>
-            <li>Volleyball</li>
-            <li>Kho Kho</li>
-            <li>Chess</li>
-            <li>Carrom</li>
-            <li>Relay</li>
-            <li>High jump</li>
-        </ul>
-    </div>
-</body>
-</html>
-register.html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event Registration Form</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="registration-container">
-        <h2>EVENT REGISTRATION FORM</h2>
-        <p>Fill the Details:</p>
-        <form class="registration-form">
-            <input type="text" placeholder="Full Name" required>
-            <input type="text" placeholder="Gender" required>
-            <input type="number" placeholder="Age" required>
-            <input type="text" placeholder="Department" required>
-            <input type="tel" placeholder="Mobile Number" required pattern="[0-9]{10}">
-            <input type="text" placeholder="Events To Register" required>
-            <button type="submit">REGISTER</button>
-        </form>
-    </div>
-</body>
-</html>
-thank.html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thank You Page</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="thank-you-container">
-        <h2>THANK YOU!</h2>
-        <p>WE ARE EAGERLY WAITING FOR YOUR PARTICIPATION</p>
-        <div class="contact-info">
-            <p>FOR MORE DETAILS</p>
-            <p>CONTACT</p>
-            <p><b>COORDINATOR</b></p>
-            <p>V DIVYASHREE</p>
-            <p>9498306889</p>
-        </div>
-    </div>
-</body>
-</html>
-page1.css
-body {
-    font-family: Arial, sans-serif;
-    background-image: url('background.jpg'); /* Add your background image here */
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-}
-
-.container {
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 20px;
-    border-radius: 10px;
-    width: 350px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-}
-
-.banner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.college-logo {
-    width: 60px;
-    height: auto;
-    margin-right: 10px;
-}
-
-.banner-text h1 {
-    font-size: 18px;
-    color: #003366;
-    margin: 0;
-}
-
-.banner-text p {
-    font-size: 12px;
-    margin: 0;
-    color: #666;
-}
-
-h2 {
-    margin: 20px 0;
-    font-size: 24px;
-    color: #8B0000;
-}
-
-.button-container {
-    margin: 20px 0;
-}
-
-.btn {
-    display: block;
-    width: 150px;
-    padding: 10px;
-    margin: 10px auto;
-    font-size: 16px;
-    color: white;
-    background-color: #8B4513;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #5A2D1A;
-}
-
-footer {
-    margin-top: 20px;
-    font-size: 16px;
-    color: #333;
-}
-page2.css
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f5f5f5;
-}
-
-.event-container {
-    background: linear-gradient(to bottom, #f0e68c, #fdf5e6);
-    padding: 20px;
-    border-radius: 10px;
-    width: 300px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-    font-size: 24px;
-    color: #6e2b77;
-    text-shadow: 1px 1px #e0e0e0;
-    margin-bottom: 10px;
-}
-
-hr {
-    border: none;
-    border-top: 2px solid #6e2b77;
-    width: 50px;
-    margin: 10px auto;
-}
-
-.event-list {
-    list-style-type: disc;
-    color: #b30059;
-    text-align: left;
-    padding-left: 20px;
-}
-
-.event-list li {
-    margin: 5px 0;
-}
-page3.css
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f5f5f5;
-}
-
-.registration-container {
-    background: linear-gradient(to bottom, #f0e68c, #fdf5e6);
-    padding: 30px;
-    border-radius: 10px;
-    width: 350px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-    font-size: 24px;
-    color: #b30000;
-    margin-bottom: 20px;
-}
-
-p {
-    font-size: 18px;
-    color: #333;
-    margin-bottom: 15px;
-}
-
-.registration-form {
-    display: flex;
-    flex-direction: column;
-}
-
-.registration-form input {
-    margin: 10px 0;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    background-color: #f0f0f5;
-    font-size: 16px;
-}
-
-.registration-form input:focus {
-    outline: none;
-    border-color: #6e2b77;
-}
-
-.registration-form button {
-    margin-top: 15px;
-    padding: 10px;
-    background-color: #6e2b77;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.registration-form button:hover {
-    background-color: #5a2360;
-}
-page4.css
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-    background-image: linear-gradient(to bottom, #e0f7fa, #b2ebf2);
-    background-size: cover;
-}
-
-.thank-you-container {
-    text-align: center;
-    padding: 50px;
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
-    width: 350px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-    font-size: 28px;
-    color: #b30000;
-    margin-bottom: 20px;
-}
-
-p {
-    font-size: 18px;
-    color: #333;
-    margin: 5px 0;
-}
-
-.contact-info p {
-    margin: 8px 0;
-    font-size: 16px;
-    color: #444;
-}
-
-.contact-info b {
-    font-weight: bold;
-    color: #6e2b77;
-}
+HOME PAGE
+<div style="width: 360px; height: 640px; position: relative; background: white">
+  <img style="width: 360px; height: 640px; left: 0px; top: 0px; position: absolute" src="https://via.placeholder.com/360x640" />
+  <div style="width: 372px; height: 26px; left: 6px; top: 72px; position: absolute; color: black; font-size: 20px; font-family: Kavoon; font-weight: 400; word-wrap: break-word">Dive in! We've got something special</div>
+  <div style="width: 149px; height: 28px; left: 7px; top: 277px; position: absolute; background: #F8E007"></div>
+  <div style="width: 137px; height: 19px; left: 18px; top: 282px; position: absolute; color: black; font-size: 15px; font-family: Kavoon; font-weight: 400; word-wrap: break-word">Enter your Name :</div>
+  <div style="width: 175px; height: 28px; left: 166px; top: 277px; position: absolute; background: #FFD703"></div>
+  <div style="width: 170px; height: 21px; left: 173px; top: 280px; position: absolute; color: black; font-size: 15px; font-family: Kavoon; font-weight: 400; word-wrap: break-word">_____</div>
+  <div style="width: 149px; height: 29px; left: 7px; top: 333px; position: absolute; background: #FFE500"></div>
+  <div style="width: 136px; height: 26px; left: 50px; top: 336px; position: absolute; color: black; font-size: 15px; font-family: Kavoon; font-weight: 400; word-wrap: break-word">College :</div>
+  <div style="width: 175px; height: 29px; left: 166px; top: 333px; position: absolute; background: #FFD707"></div>
+  <div style="width: 48px; height: 17px; left: 230px; top: 336px; position: absolute; color: black; font-size: 15px; font-family: Kavoon; font-weight: 400; word-wrap: break-word">Select </div>
+  <div style="width: 22px; height: 9px; left: 332px; top: 354.19px; position: absolute; transform: rotate(-179.50deg); transform-origin: 0 0; color: black; font-size: 15px; font-family: Kavoon; font-weight: 400; word-wrap: break-word">^</div>
+  <img style="width: 416px; height: 179px; left: -33px; top: 101px; position: absolute" src="https://via.placeholder.com/416x179" />
+  <img style="width: 138px; height: 68.35px; left: 100px; top: 567px; position: absolute" src="https://via.placeholder.com/138x68" />
+</div>
+PAGE1
+<div style="width: 360px; height: 640px; position: relative; background: white">
+  <img style="width: 413px; height: 666px; left: -26px; top: -26px; position: absolute" src="https://via.placeholder.com/413x666" />
+  <img style="width: 360px; height: 54.14px; left: 0px; top: 2px; position: absolute" src="https://via.placeholder.com/360x54" />
+  <img style="width: 119px; height: 148px; left: 37px; top: 158px; position: absolute" src="https://via.placeholder.com/119x148" />
+  <div style="width: 272px; height: 33px; left: 50px; top: 71px; position: absolute; color: black; font-size: 24px; font-family: Keania One; font-weight: 400; word-wrap: break-word">EVENTS IN CELANZA !!!</div>
+  <img style="width: 118.52px; height: 148px; left: 193px; top: 158px; position: absolute" src="https://via.placeholder.com/119x148" />
+  <img style="width: 118px; height: 146.77px; left: 37px; top: 374px; position: absolute" src="https://via.placeholder.com/118x147" />
+  <img style="width: 119px; height: 147px; left: 193px; top: 374px; position: absolute" src="https://via.placeholder.com/119x147" />
+  <div style="width: 149px; height: 17px; left: 63px; top: 141px; position: absolute; color: black; font-size: 12px; font-family: Luckiest Guy; font-weight: 400; word-wrap: break-word">*Event 1*</div>
+  <div style="width: 76px; height: 11px; left: 219px; top: 141px; position: absolute; color: black; font-size: 12px; font-family: Luckiest Guy; font-weight: 400; word-wrap: break-word">*EVENT 2*</div>
+  <div style="width: 96px; height: 15px; left: 66px; top: 362px; position: absolute; color: black; font-size: 12px; font-family: Luckiest Guy; font-weight: 400; word-wrap: break-word">*EVENT 3*</div>
+  <div style="width: 87px; height: 12px; left: 223px; top: 362px; position: absolute; color: black; font-size: 12px; font-family: Luckiest Guy; font-weight: 400; word-wrap: break-word">*EVENT 4*</div>
+  <div style="width: 101px; height: 23px; left: 279px; top: 610px; position: absolute; color: white; font-size: 20px; font-family: Luckiest Guy; font-weight: 400; word-wrap: break-word">NEXT>>></div>
+</div>
+PAGE2
+<div style="width: 360px; height: 640px; position: relative; background: white">
+  <img style="width: 360px; height: 640px; left: 0px; top: 0px; position: absolute" src="https://via.placeholder.com/360x640" />
+  <img style="width: 404px; height: 147px; left: -20px; top: 326px; position: absolute" src="https://via.placeholder.com/404x147" />
+  <div style="width: 341px; height: 26px; left: 9px; top: 154px; position: absolute; color: black; font-size: 16px; font-family: Luckiest Guy; font-weight: 400; word-wrap: break-word">Get Ready for all the Events You're Registered!</div>
+  <div style="width: 333px; height: 86px; left: 23px; top: 254px; position: absolute; color: black; font-size: 16px; font-family: Luckiest Guy; font-weight: 400; word-wrap: break-word">Spread the word! Share this event with your friends and colleagues who might be interested.................</div>
+</div>
+  <div style="width: 101px; height: 23px; left: 279px; top: 610px; position: absolute; color: white; font-size: 20px; font-family: Luckiest Guy; font-weight: 400; word-wrap: break-word">designed by ARUN_S>>></div>
+</div>
 ```
+
+
 # OUTPUT:
-![Screenshot 2024-12-13 233504](https://github.com/user-attachments/assets/784d1f59-d4a7-4b69-95a3-8a3d3501a0b6)
-![Screenshot 2024-12-13 233525](https://github.com/user-attachments/assets/1992bd19-9b2c-4789-ac45-66af470a2bb6)
-![Screenshot 2024-12-13 233538](https://github.com/user-attachments/assets/4e9ab282-de24-4438-8201-51a625c6f51c)
-![Screenshot 2024-12-13 233552](https://github.com/user-attachments/assets/cb85fdf8-2302-4ade-a753-b2fa16e04940)
+
+![Screenshot 2024-12-16 110436](https://github.com/user-attachments/assets/0f040494-369e-4d6a-acda-4cb3b8b67102)
+
 
 
 
